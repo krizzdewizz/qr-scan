@@ -1,0 +1,73 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(84, 68, 79, 0.98);
+}
+
+.title {
+  font-size: 22px;
+  text-align: center;
+  padding: 15px;
+  background-color: #4d3d47;
+  color: white;
+}
+
+.output {
+  font-family: Courier;
+  color: white;
+  margin: 30px;
+  margin-top: 0;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  flex: 1;
+  font-size: 20px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+zxing-scanner {
+  padding: 40px;
+}
+
+.tool {
+  display: flex;
+  height: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 60px;
+
+  & > button {
+    flex: 1;
+    margin: 2px;
+  }
+}
+
+button {
+  font-size: 22px;
+  background-color: transparent;
+  border-width: 0;
+  color: white;
+
+  &:disabled {
+    color: darkgray;
+  }
+}
+
+.tap-to-start {
+  right: 15px;
+  position: absolute;
+}
+
+.scanner {
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+}
+
+.dummy {
+  height: 280px;
+}
